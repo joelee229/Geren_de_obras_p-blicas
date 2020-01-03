@@ -1,0 +1,221 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    overflow: hidden;
+    padding: 30px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.322);
+    animation: mov 500ms;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+/*Style the logo*/
+
+#navbar #img {
+    height: 100px;
+    width: 180px;
+    transition: all 0.3s  none;
+}
+
+#navbar a{
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* Links on mouse-over */
+
+#navbar #navbar-right a:hover {
+    background-color:rgb(94, 176, 189);
+    color: white;
+    padding-left: 12px;
+}
+
+/* Style the active/current link */
+
+#navbar #navbar-right a.active {
+    font-weight: bold;
+    background-color: white;
+    color: #37A4B4;
+}
+/* Display some links to the right */
+
+#navbar-right {
+    padding-top: 36px;
+    float: right;
+}
+#navbar-right a {
+    background-color: #37A4B4;
+    color: white;
+    transition: 0.4s;
+} 
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+
+@media screen and (max-width: 580px){
+    #navbar {
+        padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+}
+
+
+@keyframes mov {
+    from{ 
+        opacity: 0;
+        transform: translateY(-15%);
+    }to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.header-site {
+    background-image: url(../_images/thumb1.jpg);
+    background-repeat: no repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#ffffff;
+    padding-top: 300px;
+    padding-bottom:300px;
+    animation: mov 1s;
+}
+
+.content-site {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    animation: mov 1s;
+}
+.img-site {
+    animation: mov 1s;
+    background-image: url(../_images/img_01.jpg);
+    background-position: center top;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #ffffff;
+}
+
+.col-xs-12 {
+    background-color:rgba(0, 0, 0, 0.808);
+    border-radius: 5px;
+    width:30%;
+    margin-left:35%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.area {
+    animation: mov 1s;
+    margin-bottom: 50px;
+}
+
+#form {
+    padding: 5px;   
+    display: block;
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+}
+
+#form h1 {
+    color: #000000;
+    margin-left: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form-group select {      
+    border: 1px solid #4d80f0;
+    background-color: #96b2eebb;  
+    border-radius: 10px;   
+    width: 50%; /* Tamanho do select, maior que o tamanho da div "div-select" */      
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */  
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */  
+    font-size:20px; /* Tamanho da Fonte */ 
+    font-weight: bold; 
+    padding:10px; /* Configurações de padding para posicionar o texto no campo */  
+    color:#0000009f; /* Cor da Fonte */             
+    margin: 15px;   
+}
+
+.form-group {    
+    width:100%;  
+    /* Tamanho final do select */    
+    overflow:hidden; 
+    /* Esconde o conteúdo que passar do tamanho especificado */
+}
+
+.card-area {
+    width: 100%;
+    padding-left: 100px;
+    animation: mov 1s;
+}
+
+.card-area #lista li{
+    display: inline-block;
+}
+
+.card {
+    float: left;
+    box-shadow: 2.5px 3px 19px rgba(0, 0, 0, 0.658);
+    border-radius: 4px; 
+    font-size: 15px;
+    border-top: 4px solid rgb(56, 56, 218);
+    border-left: 1px solid rgba(0, 0, 0, 0.589);
+    border-right: 1px solid rgba(0, 0, 0, 0.589);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.589);
+    
+    margin-left: 13px;
+    margin-bottom: 22px;
+    background-color: white;
+    padding: 10px;
+    width: 620px;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#botao {
+    background-color: rgb(226, 72, 72);
+    color: white;
+    padding: 8px;
+    border-radius: 4.5px;
+    border: none;
+    margin-left: 80px;
+}
+#botao:hover {
+    transform: scale(30px,30px);
+}

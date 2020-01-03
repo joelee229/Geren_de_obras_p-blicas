@@ -1,0 +1,13 @@
+CREATE DATABASE Banco_Gerenciamento_Obras_Publicas;
+CREATE TABLE Tabela_De_Dados(
+  ID INTEGER PRIMARY KEY,
+  Data_De_Inicio VARCHAR(255) NOT NULL,
+  Org_Sup VARCHAR(255),
+  Ent_Vinc VARCHAR(255),
+  Uni_Gest VARCHAR(255),
+  Area_De_Atuacao VARCHAR(255),
+  Prog_Gov VARCHAR(255),
+  Valor_Emp FLOAT,
+  Valor_Liquidado FLOAT,
+  Valor_Pago FLOAT
+);	

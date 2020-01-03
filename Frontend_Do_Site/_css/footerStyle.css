@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#rodape {
+    background-color: #d8d8d8;
+    animation: fade 1s;
+    bottom: 0;
+}
+
+#rodape #rodape-down {
+    padding-top:20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#rodape #rodape-down p {
+    color: black;
+    margin: 5px;
+}
+
+
+#rodape #rodape-down a:hover {
+    color: #F9CF34
+}
+
+@keyframes fade {
+    from {
+        transform: translateY2(20%);
+        opacity: 0;
+    }to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+body {
+    background-color: #FFFFFF;
+    
+}
+/*.squares li {
+   
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    position: absolute;
+   
+    animation: up 2s infinite alternate;
+    z-index: -1;
+    overflow: hidden;
+}
+  
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0s);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-1500px) rotate(960deg);
+    }
+  }*/
